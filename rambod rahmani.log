@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.8.12)  8 SEP 2017 10:57
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.8.12)  16 SEP 2017 11:07
  restricted system commands enabled.
  file:line:error style messages enabled.
 **"rambod rahmani.tex"
@@ -36,7 +36,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.268 seconds
+luaotfload | main : initialization completed in 0.348 seconds
 Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
 (./friggeri-cv.cls
 Document Class: friggeri-cv 2012/04/30 CV class
@@ -1690,15 +1690,15 @@ Here is how much of LuaTeX's memory you used:
  439 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 7 attribute, 57 glue_spec, 6 attribute_list
 , 2 write nodes
-   avail lists: 1:7,2:1637,3:184,4:272,5:42,6:3630,7:1209,8:27,9:287,10:14,11:32
-5
+   avail lists: 1:7,2:1637,3:184,4:272,5:42,6:3501,7:1209,8:27,9:287,10:14,11:31
+6
  40525 multiletter control sequences out of 65536+600000
- 69 fonts using 11701411 bytes
+ 69 fonts using 11701455 bytes
  73i,9n,90p,974b,698s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2017/texmf-dist/fonts/opentype/public/fontawesome/FontAwesom
 e.otf><./HelveticaNeueIt.ttf><./HelveticaNeue-Light.ttf><./HelveticaNeue-Condens
 edBold.ttf><./HelveticaNeue.ttf><./HelveticaNeue-UltraLight.ttf>
-Output written on rambod rahmani.pdf (3 pages, 58288 bytes).
+Output written on rambod rahmani.pdf (3 pages, 57960 bytes).
 
 PDF statistics: 76 PDF objects out of 1000 (max. 8388607)
  52 compressed objects within 1 object stream
