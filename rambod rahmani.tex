@@ -1,12 +1,17 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Rambod Rahmani Curriculum Eng
+%-------------------------------------------------------------------------------
+% File: rambod rahmani.tex
+%       Rambod Rahmani CV Thesis template.
 %
-% Important notes:
-% This template needs to be compiled with LuaLaTeX.
+%       Compile using:
+%           $ lualatex main.tex
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Author: Rambod Rahmani <rambodrahmani@autistici.org>
+%         Created on 28/09/2017
+%-------------------------------------------------------------------------------
 
-\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+% Add 'print' as an option into the square bracket to remove colors from this
+% template for printing
+\documentclass[]{friggeri-cv}
 
 \usepackage{changepage}
 \usepackage{csquotes}
@@ -15,13 +20,15 @@
 
 \begin{document}
 
-\header{Rambod}{Rahmani}{Student at University of Pisa} % Your name and current job title/field
+ % Name and current job title/field
+\header{Rambod}{Rahmani}{Student at University of Pisa}
 
-%----------------------------------------------------------------------------------------
-%	SIDEBAR SECTION 1
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+% SIDEBAR SECTION 1
+%-------------------------------------------------------------------------------
 
-\begin{aside} % In the aside, each new line forces a line break
+% In the aside, each new line forces a line break
+\begin{aside}
 \section{Contact}
 Via Pietro Casu, 16
 Sassari, (SS) 07100
@@ -39,32 +46,59 @@ English (C1)
 French (A2)
 Spanish (A1)\vspace{6mm}
 \section{Programming \small{\textcolor{magenta}{{\faHeart}}}}
-Java, JavaFX, Python, C, C++, Objective-C, .NET Framework, R, Latex, OpenCV, APEX, SQL, PL/SQL, MySQL, PHP, CSS, JavaScript, jQuery, HTML5, Django, XML, GWT, JSON, Shell Script.\vspace{6mm}
+Java, JavaFX, Python, C, C++, Objective-C, .NET Framework, R, Latex,
+OpenCV, APEX, SQL, PL/SQL, MySQL, PHP, CSS, JavaScript, jQuery,
+HTML5, Django, XML, GWT, JSON, Shell Script.\vspace{6mm}
 \section{Software}
-xCode, Android Studio, Windows Phone SDK, Matlab, Visual Studio, Eclipse, Photoshop, Illustrator, Dreamweaver, Premiere Pro, VirtualBox, , ISPConfig, Openstack, Puppet, OpenMediaVault, MongoDB, Metasploit, Wireshark, Git, Jira, Trac.\vspace{6mm}
+Vim, xCode, Android Studio, Windows Phone SDK, Matlab, Visual
+Studio, Eclipse, Photoshop, Illustrator, Dreamweaver, Premiere
+Pro, VirtualBox, ISPConfig, Openstack, Puppet, OpenMediaVault,
+MongoDB, Metasploit, Wireshark, Git, Jira, Trac.\vspace{6mm}
 \section{Hardware}
-Arduino, Raspberry Pi, Embedded Pi, Cubieboard, Torobot, TP-Link CPE210, CPE510, EAP225, Ubiquiti Nanostation M3 and Picostation.
+Arduino, Raspberry Pi, Embedded Pi, Cubieboard, Torobot,
+TP-Link CPE210, CPE510, EAP225, Ubiquiti Nanostation M3
+and Picostation.
 \end{aside}
 
-%----------------------------------------------------------------------------------------
-%	SUMMARY SECTION
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+% SUMMARY SECTION
+%-------------------------------------------------------------------------------
 
 \section{Summary}
 \vspace{-3mm}
-I was born in Iran in 1993 and moved to Italy at the age of 7. I started studying programming languages at the age of 15 and began to work as a freelance programmer a couple of years later. At the age of 19 I was admitted at the University of Pisa as a Computer Science Student and I am currently studying for my last exams. In the last four years, beside studying for my examinations, I worked for IT Companies and for the Italian government, I took part in group projects and tried to startup my own ideas. During the academic year 2016/2017, my goals have shifted. I have developed a deep interest in Quantum Physics and its applications to computer science.
+I was born in Iran in 1993 and moved to Italy at the age of 7. I started
+studying programming languages at the age of 15 and began to work as a freelance
+programmer a couple of years later. At the age of 19 I was admitted to the
+University of Pisa as a Computer Engineering student. After finishing my
+bachelor I enrolled for a Master in Artificial Intelligence and Data
+Engineering. In the past years, beside studying for my examinations, I worked
+for IT Companies and for the Italian government, I took part in group projects
+and tried to startup my own ideas. During the academic year 2017/2018, my goals
+have shifted. I have developed a deep interest in Artificial Intelligence.
+Precisely, what really keeps me up at night is the complexity behind creating a
+mathematical model (to be translated into a computational architecture) capable
+of independent decision making and of generating original thoughts. To this very
+specific end, is the von Neumann architecture good enough or should a new one be
+conceived? Is it mainly a problem of programming? Finally, as said by Alan
+Turing in his seminal paper Computing Machinery and Intelligence, can machines
+think?
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+% EDUCATION SECTION
+%-------------------------------------------------------------------------------
 
 \section{Education}
 \vspace{-3mm}
 \begin{entrylist}
+\entry
+{2019 - 2020}
+{Master {\normalfont\small{of Engineering Studies - Artificial Intelligence}}}
+{University of Pisa, Italy}
+{\vspace{-3mm}}
 %------------------------------------------------
 \entry
-{2013 - 2017}
-{Bachelor {\normalfont\small{of Engineering Studies - Computer Science}}}
+{2013 - 2019}
+{Bachelor {\normalfont\small{of Engineering Studies - Computer Engineering}}}
 {University of Pisa, Italy}
 {\vspace{-3mm}}
 %------------------------------------------------
@@ -76,14 +110,15 @@ I was born in Iran in 1993 and moved to Italy at the age of 7. I started studyin
 %------------------------------------------------
 \end{entrylist}
 
-%----------------------------------------------------------------------------------------
-%	PERSONAL STUDIES SECTION
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+% PERSONAL STUDIES SECTION
+%-------------------------------------------------------------------------------
 
 \patchcmd{\entry}{11.8cm}{14.8cm}{}{}
 \section{Personal Studies}
 \vspace{-3mm}
-The following is a list of in-depth courses which I followed during my Bachelor of Engineering.
+The following is a list of in-depth courses which I followed during my Bachelor
+of Engineering.
 
 \begin{entrylist}
 %------------------------------------------------
@@ -91,48 +126,6 @@ The following is a list of in-depth courses which I followed during my Bachelor 
 {}
 {Complete Java Masterclass: {\normalfont\small{Learn to master Java 8 core development.}}}
 {Tim Buchalka}
-{\vspace{-3mm}}
-%------------------------------------------------
-\entry
-{}
-{Learning JavaFX GUI Development: {\normalfont\small{Develop enterprise apps using JavaFX.}}}
-{Peggy Fisher}
-{\vspace{-3mm}}
-%------------------------------------------------
-\entry
-{}
-{Python 3 and Django Full Stack Web Developer Bootcamp{\normalfont\small{.}}}
-{Jose Marcial Portilla}
-{\vspace{-3mm}}
-%------------------------------------------------
-\entry
-{}
-{Advanced C++ Programming: {\normalfont\small{Intermediate to advanced C++, including C++ 11's additions.}}}
-{John Purcell}
-{\vspace{-3mm}}
-%------------------------------------------------
-\entry
-{}
-{Machine Learning: Hands-On Python \& R In Data Science{\normalfont\small{.}}}
-{Kirill Eremenko, Hadelin de Ponteves}
-{\vspace{-3mm}}
-%------------------------------------------------
-\entry
-{}
-{Introduction to Computer Vision | Master OpenCV 3 in Python{\normalfont\small{.}}}
-{Rajeev Ratan}
-{\vspace{-3mm}}
-%------------------------------------------------
-\entry
-{}
-{Thoughtful Web Development: {\normalfont\small{HTML5, CSS3, JavaScript, jQuery, Vue.js, AJAX, PHP.}}}
-{OnlyKiosk Tech}
-{\vspace{-3mm}}
-%------------------------------------------------
-\entry
-{}
-{Complete Ethical Hacking Course: {\normalfont\small{SSL Strip, BruteForcing, DDoS, Reverse Shells.}}}
-{Ermin Kreponic}
 {\vspace{-3mm}}
 %------------------------------------------------
 \entry
@@ -155,15 +148,39 @@ The following is a list of in-depth courses which I followed during my Bachelor 
 %------------------------------------------------
 \entry
 {}
-{Thermodynamics: Four Laws That Move the Universe{\normalfont\small{.}}}
-{Professor Jeffrey C. Grossman, Ph.D}
+{Advanced C++ Programming: {\normalfont\small{Intermediate to advanced C++, including C++ 11's additions.}}}
+{John Purcell}
+{\vspace{-3mm}}
+%------------------------------------------------
+\entry
+{}
+{Machine Learning: Hands-On Python \& R In Data Science{\normalfont\small{.}}}
+{Kirill Eremenko, Hadelin de Ponteves}
+{\vspace{-3mm}}
+%------------------------------------------------
+\entry
+{}
+{Introduction to Computer Vision | Master OpenCV 3 in Python{\normalfont\small{.}}}
+{Rajeev Ratan}
+{\vspace{-3mm}}
+%------------------------------------------------
+\entry
+{}
+{Artificial Intelligence: A Modern Approach I{\normalfont\small{.}}}
+{Stuart J. Russell, Peter Norvig, F. Amigoni, S. Gaburri}
+{\vspace{-3mm}}
+%------------------------------------------------
+\entry
+{}
+{Artificial Intelligence: A Modern Approach II{\normalfont\small{.}}}
+{Stuart J. Russell, Peter Norvig, F. Amigoni, S. Gaburri}
 {\vspace{-3mm}}
 %------------------------------------------------
 \end{entrylist}
 
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+% WORK EXPERIENCE SECTION
+%-------------------------------------------------------------------------------
 \patchcmd{\entry}{14.8cm}{11.8cm}{}{}
 \section{Work Experience}
 \vspace{-3mm}
@@ -179,11 +196,11 @@ I worked as Java developer for the ClassX S.r.l focusing to develop broadcasting
 
 \clearpage
 
-%----------------------------------------------------------------------------------------
-%	SIDEBAR SECTION 2
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+% SIDEBAR SECTION 2
+%-------------------------------------------------------------------------------
 
-\begin{aside}
+\begin{aside} \vspace{-2.8cm}
 \section{Operating Systems}
 Windows 7/8/10, Mac OS X, iOS, Android, Debian, Linux Mint, Arch Linux, Raspbian, OpenWRT, Kali Linux, Parrot OS, Tails.\vspace{6mm}
 \section{Linkedin \textcolor{blue}{\faLinkedinSquare}}
@@ -261,14 +278,20 @@ I coded a set of three software named \textbf{A.S.C (Acceptance, Sorting and Con
 %	SIDEBAR SECTION 3
 %----------------------------------------------------------------------------------------
 
-\begin{aside}
+\begin{aside}\vspace{-2.8cm}
 \section{3D Printing \textcolor{red}{\faConnectdevelop}}
+\begin{itemize}
+	\item Geeetech Prusa i3 Pro B
+	\item Anycubic I3 Mega
+	\item Creality Ender 3 Pro
+	\item Anycubic Photon
+\end{itemize}\vspace{6mm}
 \section{OpenWRT \textcolor{green}{\faWifi}}
 As a member of EigenLab, a local hacklab in Pisa, I was involved in installing and configuring the OpenWRT Distribution on embedded devices that we used to build EigenNet: a local \textbf{Wireless Mesh Network} in the city of Pisa.\vspace{6mm}
 \section{Bitcoin \textcolor{red}{\faBitcoin}}
 I have been involved in Bitcoins as far as it regards Bitcoin Mining (CGMiner, CPUMiner, USB Miners), Mining Pools, Bitcoin Wallet and Full Bitcoin Node Configuration (Bitcoin Core).\vspace{6mm}
 \section{Places \textcolor{light-blue}{\faMapMarker}}
-Iran, Italy, Germany, Spain, France, Belgium, Russia.\vspace{6mm}
+Iran, Italy, Germany, Spain, France, Belgium, Holland, Russia.\vspace{6mm}
 \small{Last updated: \today\ }
 \end{aside}
 
