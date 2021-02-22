@@ -1,6 +1,7 @@
 # Rambod Rahmani's CV
-
 Rambod Rahmani's CV written in latex.
+
+![CV Preview](cover.jpeg)
 
 The source code is based on <a href="https://www.latextemplates.com/template/friggeri-resume-cv">Friggeri Resume/CV</a>.
 
@@ -9,9 +10,7 @@ Latest version of my CV, typesetted in Helvetica and using colors inspired by Mo
 
 Uses TikZ for the header, XeTeX and fontspec to use Helvetica Neue, biblatex to print my publications and textpos for the aside.
 
-
 # Friggeri-CV License
-
 Copyright (C) 2012, Adrien Friggeri
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
