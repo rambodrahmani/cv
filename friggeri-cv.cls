@@ -51,13 +51,13 @@
 \RequirePackage{unicode-math}
 \RequirePackage{fontawesome}  % For icons
 
-\newfontfamily\bodyfont[]{[HelveticaNeue.ttf]}
+\newfontfamily\bodyfont[]{HelveticaNeue.ttf}
 
-\newfontfamily\thinfont[]{[HelveticaNeue-UltraLight.ttf]}
-\newfontfamily\headingfont[]{[HelveticaNeue-CondensedBold.ttf]}
+\newfontfamily\thinfont[]{HelveticaNeue-UltraLight.ttf}
+\newfontfamily\headingfont[]{HelveticaNeue-CondensedBold.ttf}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor, ItalicFont={[HelveticaNeueIt.ttf]}]{[HelveticaNeue-Light.ttf]}
+\setmainfont[Mapping=tex-text, Color=textcolor, ItalicFont={HelveticaNeueIt.ttf}]{HelveticaNeue-Light.ttf}
 
 \RequirePackage[none]{hyphenat} % No hyphenation
 
