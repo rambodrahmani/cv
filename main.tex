@@ -7,6 +7,7 @@
   \usepackage[T1]{fontenc}
   \usepackage[default]{lato}
 \fi
+\usepackage{hyperref}
 \definecolor{VividPurple}{HTML}{000000}
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{2E2E2E}
@@ -20,59 +21,42 @@
 
 \begin{document}
 \name{Rambod Rahmani}
-\tagline{University of Pisa - Artificial Intelligence Engineer}
-% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
-%\photo{3.3cm}{profile.jpg}
+\tagline{Artificial Intelligence and Data Engineer}
 \personalinfo{%
-  % Not all of these are required!
-  % You can add your own with \printinfo{symbol}{detail}
-  \email{rambodrahmani@yahoo.it}
-%   \phone{000-00-0000}
-%  \mailaddress{Address, Street, 00000 County}
+  \email{\href{mailto:rambodrahmani@yahoo.it}{rambodrahmani@yahoo.it}}\\
+  \github{\href{https://github.com/rambodrahmani}{github.com/rambodrahmani}}\\
+  \linkedin{\href{https://linkedin.com/in/rambodrahmani}{linkedin.com/in/rambodrahmani}}\\
+  \medskip
   \location{Pisa, Tuscany - Italy}
-%  \homepage{marissamayr.tumblr.com/}
-%  \twitter{@marissamayer}
-  \linkedin{https://www.linkedin.com/in/rambodrahmani/}
-%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
 }
 
-%% Make the header extend all the way to the right, if you want.
 \begin{fullwidth}
 \makecvheader
 \end{fullwidth}
 
-%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
 \AtBeginEnvironment{itemize}{\small}
 
-%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
-%% You can always just use \marginpar{...} if you do
-%% not need to align the top of the contents to any
-%% \cvsection title in the "main" bar.
 \cvsection[page1sidebar]{Working Experience}
 
 \cvevent{Financial Services IT Consultant}{Blue Reply S.r.l.}{Nov 2022 -- Currently}{Florence, Italy}
 \begin{itemize}
-\item Software Engineer.
-\smallskip
-\item M.Eng thesis: A Machine Learning Approach For Credit Score Analysis.
+\item As a full-stack engineer, I develop financial sector applications for consumer credit, working with Java Spring Boot and Camel orchestrations for the backend, and Angular for the frontend. I ensure seamless integration using Axway API Gateway and incorporate IBM MQ for financial data workflows.
+\item For the innovation lab, my focus revolves around fine-tuning transformer models for default prediction using Italian companies' 10-k reports. Data is extracted from the AIDA portal, provided by Bureau van Dijk. Model explainability is achieved by employing Shapley Value. This approach helps us identify which sentences within the 10-k reports have the most significant impact on classifying a business as default or non-default.
 \end{itemize}
 
 \divider
 
 \cvevent{Software Engineer}{ClassX S.r.ls}{Feb 2018 -- Aug 2018}{Pisa, Italy}
 \begin{itemize}
-\item Java Software Engineer.
-\smallskip
-\item Computer graphics for TV broadcast.
+\item As a Java Software Engineer, I worked on developing an in-house real-time computer graphics engine and broadcast graphics solutions capable of rendering and manipulating graphics elements. This involved Java Virtual Machine performance tuning and creating virtual sets, enabling anchors to appear using green screen technology and extensions.
 \end{itemize}
 
 \divider
 
 \cvevent{Software Engineer}{R.H. Impianti di Rahmani Hamidreza}{Dec 2017 -- Mar 2023}{Sassari, Italy}
 \begin{itemize}
-\item Software Engineer.
-\smallskip
-\item Siemens TIA Portal V16 Developer.
+\item Using the Siemens TIA Portal V16, I designed and implemented a remote monitoring system for pumping stations utilizing Siemens PLC S7-1200, Simatic HMI TP1200, SINAMICS G120X converter, Sentron PAC3220 energy meter, SENTRON 3VA2 circuit breakers, SITOP DC UPS modules, and Siemens SCALANCE X208.
+\item I engineered and executed the end-to-end setup of a video surveillance ecosystem, featuring a tailored configuration of Hikvision cameras, Arteco server, and NEXT Suite v.11. This encompassed the installation and optimization of network switches, along with the implementation of PoE for efficient camera power supply and data transmission.
 \end{itemize}
 
 %\divider
@@ -80,27 +64,17 @@
 \cvsection{Papers}
 \smallskip
 \begin{itemize}
-\item \cvevent{KerubLess - Design of a Driverless Formula SAE Vehicle}{2022 IEEE 5th International Conference on Industrial Cyber-Physical Systems}{}{}
-\end{itemize}
-
-\cvsection{Certificates}
-\smallskip
-\begin{itemize}
-  \item \cvevent{Siemens SIMATIC S7-1200 MICRO1}{Siemens SITRAIN}{}{}
-  \item \cvevent{Siemens SIMATIC S7-1200 MICRO2}{Siemens SITRAIN}{}{}
-  \item \cvevent{Introduction to Physics-informed Machine Learning}{NVIDIA Deep Learning Institute}{}{}
-  \item \cvevent{Integrating Sensors with NVIDIA DRIVE}{NVIDIA Deep Learning Institute}{}{}
+\item \cvevent{KerubLess - Design of a Driverless Formula SAE Vehicle}{\\5th IEEE International Conference on Industrial Cyber-Physical Systems}{}{}
+\item \cvevent{Enhancing Credit Default Prediction through an Ensemble of Focal Loss-Based Neural Networks}{\\Credit Scoring and Credit Control XVIII}{}{}
+\item \cvevent{Enhancing finance through machine learning workflow to address credit default prediction}{\\2023 IEEE Symposium Series on Computational Intelligence}{}{}
 \end{itemize}
 
 \cvsection{Technical Skills}
 \smallskip
 \begin{itemize}
 \item Deep learning, Machine learning, Genetic algorithms for optimization.
-\smallskip
 \item Linux, ROS, C++, Python, Java, PyTorch, Tensorflow, NVIDIA CUDA.
-\smallskip
 \item Siemens TIA Portal, MySQL, Java, Spring Boot, Angular, Git.
-\smallskip
 \item Apache spark, Apache Cassandra, Apache Hadoop.
 \end{itemize}
 \clearpage

@@ -151,24 +151,16 @@
 \newcommand{\personalinfo}[1]{\def\@personalinfo{#1}}
 
 \newcommand{\makecvheader}{%
-  \begingroup
-    \ifdef{\@photodiameter}{\begin{minipage}{\dimexpr\linewidth-\@photodiameter-2em}}{}%
+  \begin{minipage}[t]{0.64\linewidth}
     \raggedright\color{emphasis}%
-    {\Huge\bfseries\MakeUppercase{\@name}\par}
+    {\huge\bfseries\MakeUppercase{\@name}\par}
     \medskip
     {\large\bfseries\color{accent}\@tagline\par}
-    \medskip
-    {\footnotesize\bfseries\@personalinfo\par}
-    \ifdef{\@photodiameter}{%
-    \end{minipage}\hfill%
-    \begin{minipage}{\@photodiameter}
-    \if@normalphoto
-      \includegraphics[width=\linewidth]{\@photo}
-    \else
-      \tikz\path[fill overzoom image={\@photo}]circle[radius=0.5\linewidth];
-    \fi%
-    \end{minipage}\par}{}%
-  \endgroup\medskip
+  \end{minipage}%
+  \begin{minipage}[t]{0.36\linewidth}
+    \small\bfseries\@personalinfo\par
+  \end{minipage}%
+  \medskip
 }
 
 \renewenvironment{quote}{\color{accent}\itshape\large}{\par}
@@ -176,25 +168,24 @@
 \newcommand{\cvsection}[2][]{%
   \bigskip%
   \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}%
-  {\color{heading}\LARGE\bfseries\MakeUppercase{#2}}\\[-1ex]%
+  {\color{heading}\large\bfseries\MakeUppercase{#2}}\\[-1ex]%
   {\color{heading}\rule{\linewidth}{2pt}\par}\medskip
 }
 
 \newcommand{\cvsubsection}[1]{%
-  \smallskip%
+  \vspace{1pt}%
   {\color{emphasis}\large\bfseries{#1}\par}\medskip
 }
 
 % v1.1.4: fixes inconsistent font size
 \newcommand{\cvevent}[4]{%
-  {\large\color{emphasis}#1\par}
-  \smallskip\normalsize
+  {\normalsize\color{emphasis}#1\hfill}
+  \vspace{1pt}\small
   \ifstrequal{#2}{}{}{
-  \textbf{\color{accent}#2}\par
-  \smallskip}
-  \ifstrequal{#3}{}{}{{\small\makebox[0.5\linewidth][l]{\faCalendar\hspace{0.5em}#3}}}%
-  \ifstrequal{#4}{}{}{{\small\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.5em}#4}}}\par
-  \medskip\normalsize
+  \textbf{\color{accent}#2}\par}
+  \ifstrequal{#3}{}{}{{\scriptsize\makebox[0.5\linewidth][l]{\faCalendar\hspace{0.5em}#3}}}%
+  \ifstrequal{#4}{}{}{{\scriptsize\makebox[0.5\linewidth][l]{\hfill\faMapMarker\hspace{0.5em}#4}}}\par
+  \medskip\small
 }
 
 \newcommand{\cvachievement}[3]{%
@@ -202,12 +193,12 @@
   \multirow{4}{*}{\Large\color{accent}#1} & \bfseries\textcolor{emphasis}{#2}\\
   & #3
   \end{tabularx}%
-  %\smallskip
+  %\vspace{1pt}
 }
 
 \newcommand{\cvproject}[1]{%
-  {\textbf{\color{accent}#1}\par}
-  \smallskip\normalsize
+  {\textbf{\small\color{accent}#1}\par}
+  \vspace{1pt}\footnotesize
 }
 
 \newcommand{\cvtag}[1]{%
@@ -276,7 +267,7 @@
 }
 
 \newcommand{\cvref}[3]{%
-  \smallskip
+  \vspace{1pt}
   \textcolor{emphasis}{\textbf{#1}}\par
   \begin{description}[font=\color{accent},style=multiline,leftmargin=1.35em]
   \item[\normalfont\emailsymbol] #2
